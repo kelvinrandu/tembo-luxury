@@ -4,6 +4,8 @@ import Link from 'next/link';
 import React,{useRef} from "react";
 import { GridTileImage } from './grid/tile';
 import { motion,useScroll,useTransform } from "framer-motion"
+import logo from '../app/1.jpeg'
+
 
 export async function Carousel() {
   const targetRef= useRef(null)
@@ -50,7 +52,7 @@ export async function Carousel() {
                   // amount: product.priceRange.maxVariantPrice.amount,
                   // currencyCode: product.priceRange.maxVariantPrice.currencyCode
                 }}
-                src={'https://img.freepik.com/free-photo/medium-shot-smiley-woman-wearing-blank-shirt_23-2149345050.jpg'}
+                src={logo}
                 fill
                 sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
               />

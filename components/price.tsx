@@ -13,7 +13,7 @@ const Price = ({
 } & React.ComponentProps<'p'>) => (
   <p suppressHydrationWarning={true} className={className}>
  
-    <span className={clsx('ml-1 inline', currencyCodeClassName)}>  {'Book Me'}</span>
+    <span className={clsx('ml-1 inline', currencyCodeClassName)}>  {'Nyali'}</span>
   </p>
 );
 

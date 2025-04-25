@@ -12,7 +12,7 @@ const { SITE_NAME } = process.env;
 
 export async function Navbar() {
   // const menu = await getMenu('next-js-frontend-header-menu');
-  const menu = [{ title:'Models',path:'/about'},{ title:'Artists',path:'/about'},{ title:'Producers',path:'/about'}];
+  const menu = [{ title:'Apartments',path:'/about'},{ title:'About Us',path:'/about'},{ title:'Contact Us',path:'/about'}];
 
   return (
     <nav className="relative flex items-center justify-between p-4 lg:px-6">
@@ -30,7 +30,7 @@ export async function Navbar() {
           >
             <LogoSquare />
             <div className="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block">
-            Slipass
+            Tembo Luxury Living
             </div>
           </Link>
           {menu.length ? (

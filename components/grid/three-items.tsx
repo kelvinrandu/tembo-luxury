@@ -2,7 +2,7 @@ import { GridTileImage } from 'components/grid/tile';
 import { getCollectionProducts } from 'lib/shopify';
 import type { Product } from 'lib/shopify/types';
 import Link from 'next/link';
-// import logo from '@/'
+import logo from '../../app/1.jpeg'
 
 function ThreeItemGridItem({
   item,
@@ -24,7 +24,7 @@ function ThreeItemGridItem({
         prefetch={true}
       >
         <GridTileImage
-          src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqSuLFSEJWhgqhjsJwq3Y1kmnOjksbvzUcQ&s'}
+          src={logo}
           fill
           sizes={
             size === 'full' ? '(min-width: 768px) 66vw, 100vw' : '(min-width: 768px) 33vw, 100vw'
@@ -33,8 +33,8 @@ function ThreeItemGridItem({
           alt={item.title}
           label={{
             position: size === 'full' ? 'center' : 'bottom',
-            title: 'model',
-            amount: '400',
+            title: '3 Br',
+            amount: 'Nyali',
             currencyCode: 'ksh'
             // title: item.title as string,
             // amount: item.priceRange.maxVariantPrice.amount,
